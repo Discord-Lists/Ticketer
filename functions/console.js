@@ -19,7 +19,7 @@ module.exports = {
         .addField('Location', '`' + location + '`')
         .setTimestamp();
 
-      client.channels.cache.get('984189364655501403').send({ embeds: [consoleEmbed] });
+      client.channels.cache.get(PROCESS.ENV.SERVER_LOGS).send({ embeds: [consoleEmbed] });
     }
   },
 };
